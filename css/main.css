@@ -87,7 +87,7 @@ img {
 
 .main {
     grid-area: right;
-    grid-template-rows: 51px fit-content(30%);
+    grid-template-rows: 51px fit-content(30%) 40%;
     display: grid;
 }
 
@@ -114,8 +114,40 @@ ul#features{
 ul#features li {
     background-color: lightgray;
     padding: 1em;
+    align-self: start;
 }
 
 ul#features li p {
     color: #4c4c4c
+}
+
+ul#features li:nth-child(1) {
+    background-color: #E6E6E6;
+}
+ul#features li:nth-child(2) {
+    background-color: #D3D3D3;
+    align-self: center;
+}
+ul#features li:nth-child(3) {
+    background-color: #CACACA;
+}
+ul#features li:nth-child(4) {
+    background-color: #E6E6E6;
+    align-self: center;
+}
+ul#features li:nth-child(5) {
+    background-color: #D3D3D3;
+}
+
+section#info {
+    background-color: #F2F2F2;
+    padding: 2em;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: space-around;
+}
+
+#mountain-vector {
+    width: 300px;
+    align-self: center;
 }
